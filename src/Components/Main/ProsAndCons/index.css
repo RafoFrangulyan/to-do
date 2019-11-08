@@ -1,0 +1,13 @@
+.pros-and-cons {
+  width: 50%;
+  padding-bottom: 20px;
+  border: 1px solid black;
+}
+
+.pros-and-cons hr {
+  margin: 20px auto
+}
+
+.pros-and-cons h3 {
+  text-align: center;
+}
