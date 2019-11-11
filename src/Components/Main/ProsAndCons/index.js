@@ -10,8 +10,8 @@ const ProsAndCons = ({ title }) => {
     defaultData,
   } = useTodoContext();
 
-  const inputData = title === 'PROS' ? defaultData.pros : defaultData.cons
-  const [data, setData] = useState(inputData)
+  const inputData = title === 'PROS' ? defaultData.pros : defaultData.cons;
+  const [data, setData] = useState(inputData);
 
   return (
     <div className="pros-and-cons">
