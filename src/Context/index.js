@@ -22,7 +22,6 @@ function ContextProvider({ children }) {
   const handleInputChangeData = ({ target: { value } }, data, setData) => {
     const dataLength = data.length;
     const dataLastIndex = dataLength - 1;
-  
     if (!value && selectedIndex !== dataLastIndex && dataLength !== 1) {
       handleRemoveData(selectedIndex, data, setData);
     } else {

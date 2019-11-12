@@ -7,12 +7,12 @@ import ProsAndCons from '../Main/ProsAndCons';
 import './index.css';
 
 const Main = () => (
-  <DndProvider backend={HTML5Backend}>
-    <div className="main">
+  <div className="main">
+    <DndProvider backend={HTML5Backend}>
       <ProsAndCons title="PROS" />
       <ProsAndCons title="CONS" />
-    </div>
-  </DndProvider>
+    </DndProvider>
+  </div>
 );
 
 export default Main;

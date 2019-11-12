@@ -5,11 +5,15 @@ import Header from './Components/Header';
 
 import { ContextProvider } from './Context';
 
+import './App.css';
+
 const App = () => (
-  <ContextProvider>
-    <Header />
-    <Main />
-  </ContextProvider>
+  <div className="app">
+    <ContextProvider>
+      <Header />
+      <Main />
+    </ContextProvider>
+  </div>
 );
-  
+
 export default App;

@@ -1,7 +1,11 @@
 .header {
-  width: 600px;
+  width: 800px;
   margin: auto;
   padding: 1px;
   text-align: center;
-  background-color: gray;
+  background-color: rgb(155, 106, 106);
+}
+
+.header h1 {
+  color: white;
 }

@@ -7,7 +7,7 @@ import './index.css';
 
 const ProsAndCons = ({ title }) => {
   const {
-    defaultData,
+    defaultData
   } = useTodoContext();
 
   const inputData = title === 'PROS' ? defaultData.pros : defaultData.cons;
@@ -24,6 +24,7 @@ const ProsAndCons = ({ title }) => {
             data={data}
             index={index}
             value={value}
+            title={title}
             setData={setData}
           />
         )}
