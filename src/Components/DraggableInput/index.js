@@ -1,17 +1,10 @@
 import React, { useRef } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
 
-import { useTodoContext } from '../../../Context';
-import { ItemType } from '../../../Constants/ItemType';
+import { ItemType } from '../../Constants/ItemType';
 
-import './index.css';
+const DraggableInput = ({ data, setData, index, value, title, children }) => {
 
-const Input = ({ data, setData, index, value, title }) => {
-
-  const {
-    setSelectedIndex,
-    handleInputChangeData
-  } = useTodoContext();
   const mainRef = useRef(null);
   const [{ isDragging }, drag] = useDrag({
     item: {
@@ -29,6 +22,7 @@ const Input = ({ data, setData, index, value, title }) => {
       if (value) return true;
     }
   });
+  // eslint-disable-next-line 
   const [_, drop] = useDrop({
     accept: ItemType.INPUT,
     drop(item) {
@@ -63,19 +57,9 @@ const Input = ({ data, setData, index, value, title }) => {
         opacity: isDragging ? 0.5 : 1,
       }}
     >
-      <li
-        key={index}
-        onClick={() => setSelectedIndex(index)}
-      >
-        <input
-          placeholder="Fill Field"
-          className="input"
-          value={value}
-          onChange={e => handleInputChangeData(e, data, setData)}
-        />
-      </li>
+      {children}
     </div>
   );
 };
 
-export default Input;
+export default DraggableInput;

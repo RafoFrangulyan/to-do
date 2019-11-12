@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Input from '../Input';
+import Input from '../../Input';
 import { useTodoContext } from '../../../Context';
 
 import './index.css';
