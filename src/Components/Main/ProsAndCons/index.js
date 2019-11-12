@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Input from '../../Input';
+import DraggableInput from '../../DraggableInput';
 import { useTodoContext } from '../../../Context';
 
 import './index.css';
@@ -19,7 +19,7 @@ const ProsAndCons = ({ title }) => {
       <hr />
       <ol>
         {data.map((value, index) =>
-          <Input
+          <DraggableInput
             key={index}
             data={data}
             index={index}

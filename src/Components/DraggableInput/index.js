@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
 
+import Input from '../Input';
 import { ItemType } from '../../Constants/ItemType';
 
-const DraggableInput = ({ data, setData, index, value, title, children }) => {
+const DraggableInput = ({ data, setData, index, value, title, ...rest }) => {
 
   const mainRef = useRef(null);
   const [{ isDragging }, drag] = useDrag({
@@ -57,7 +58,12 @@ const DraggableInput = ({ data, setData, index, value, title, children }) => {
         opacity: isDragging ? 0.5 : 1,
       }}
     >
-      {children}
+      <Input
+        data={data}
+        index={index}
+        value={value}
+        setData={setData}
+      />
     </div>
   );
 };
