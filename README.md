@@ -4,7 +4,7 @@
 
 # Technical Stack
 - React(v16): ^.8.6.0
-- react-dnd: ^.9.4.0
+- react-dnd:  ^.9.4.0
   ### Store Manager
 - Context API
 
