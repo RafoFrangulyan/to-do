@@ -20,5 +20,5 @@
   
 # Playground
   
-  play with example [here](http://localhost:3000/)
+  play with example [here](https://github.com/RafoFrangulyan/to-do)
   
