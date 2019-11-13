@@ -8,7 +8,7 @@
   ### Store Manager
 - Context API
 
-# Functional Rquirements
+# Functional Requirements
 - Every list entry only needs to contain an index counter and a simple single-line input field
 - At the end of each list there is always one empty input field as the last entry. So As soon as someone writes something into   the last input field, there is automatically pushed another empty input field to the list.
 - When an input field, which is not the last one, is being emptied during the editing, that input filed should removed
