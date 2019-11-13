@@ -18,7 +18,7 @@ Build a small client-side only Pros & Cons list app with react
   ### History
   We can use that API for the people. We can choose some people and describe
   
-  # Playground
+# Playground
   
   play with example [here](https://http://localhost:3000/)
   
