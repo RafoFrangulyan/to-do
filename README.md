@@ -1,6 +1,6 @@
 # To Do List
 # Task Description
-Build a small client-side only Pros & Cons list app with react
+  Build a small client-side only Pros & Cons list app with react
 
 # Technical Stack
 - React(v16): ^.8.6.0
