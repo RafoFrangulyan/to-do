@@ -19,6 +19,6 @@
   We can use that API for the people. We can choose some people and describe
   
 # Playground
-  See code in GitHub [here](https://github.com/RafoFrangulyan/to-do)
-  play with example [To Do](https://rafofrangulyan.github.io/)
+  - See code in GitHub [here](https://github.com/RafoFrangulyan/to-do)
+  - play with example [To Do](https://rafofrangulyan.github.io/)
   
